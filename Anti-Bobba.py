@@ -1,6 +1,6 @@
 ﻿# encoding:utf-8
 
-INVISIBLE = "ƏƏ"
+INVISIBLE = "ђђ"
 
 CMD = ":ab"
 
@@ -13,7 +13,7 @@ from g_python.hmessage import Direction
 extension_info = {
     "title": "Anti-Bobba",
     "description":":ab on / off",
-    "version": "0.2",
+    "version": "0.3",
     "author": "funkydemir66"
 }
 
@@ -32,7 +32,7 @@ def speech(msg):
     if on:
         if not text.startswith(CMD):
             msg.is_blocked = True
-            message = "ƏƏ"
+            message = "ђђ"
 
             for i in text:
                 message += INVISIBLE + i
