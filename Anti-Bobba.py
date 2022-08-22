@@ -1,4 +1,6 @@
-﻿INVISIBLE = "ƏƏƏ"
+﻿# encoding:utf-8
+
+INVISIBLE = "ƏƏ"
 
 CMD = ":ab"
 
@@ -30,7 +32,7 @@ def speech(msg):
     if on:
         if not text.startswith(CMD):
             msg.is_blocked = True
-            message = "ƏƏƏ"
+            message = "ƏƏ"
 
             for i in text:
                 message += INVISIBLE + i
